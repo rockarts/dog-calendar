@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A6348062C82777D00E6C658 /* DogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348052C82777D00E6C658 /* DogView.swift */; };
+		5A6348082C82780000E6C658 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348072C82780000E6C658 /* EmptyCell.swift */; };
+		5A63480B2C8278AD00E6C658 /* Netable in Frameworks */ = {isa = PBXBuildFile; productRef = 5A63480A2C8278AD00E6C658 /* Netable */; };
+		5A63480D2C8278CF00E6C658 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63480C2C8278CF00E6C658 /* DogViewModel.swift */; };
+		5A6348102C83F43600E6C658 /* DogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63480F2C83F43600E6C658 /* DogRepository.swift */; };
+		5A6348132C83F52A00E6C658 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348122C83F52A00E6C658 /* DogImage.swift */; };
+		5A6348162C84077700E6C658 /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348152C84077700E6C658 /* DogService.swift */; };
+		5A63481A2C84085000E6C658 /* GetDogsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348192C84085000E6C658 /* GetDogsRequest.swift */; };
+		5A63481C2C840FF000E6C658 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63481B2C840FF000E6C658 /* Coordinator.swift */; };
+		5A63481E2C84100700E6C658 /* DogViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63481D2C84100700E6C658 /* DogViewState.swift */; };
+		5A6348212C8410CA00E6C658 /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348202C8410CA00E6C658 /* InjectedValues.swift */; };
+		5A6348232C84112200E6C658 /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348222C84112200E6C658 /* ErrorService.swift */; };
+		5A6348272C841C6A00E6C658 /* DogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348262C841C6A00E6C658 /* DogCoordinator.swift */; };
+		5A63482B2C84213400E6C658 /* DogCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63482A2C84213400E6C658 /* DogCoordinatorView.swift */; };
+		5A63482D2C84318C00E6C658 /* DogCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63482C2C84318C00E6C658 /* DogCalendar.swift */; };
+		5A63482F2C869A0500E6C658 /* DogCalendarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63482E2C869A0500E6C658 /* DogCalendarRepository.swift */; };
+		5A6348312C86D86200E6C658 /* DogCalendarRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348302C86D86200E6C658 /* DogCalendarRepositoryTests.swift */; };
+		5A6348342C875D7E00E6C658 /* DogImage.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A6348332C875D7E00E6C658 /* DogImage.json */; };
+		5A6348382C875E4D00E6C658 /* DogViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348372C875E4D00E6C658 /* DogViewModelTests.swift */; };
+		5A63483A2C8761D700E6C658 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348392C8761D700E6C658 /* TestData.swift */; };
+		5A63483C2C87665A00E6C658 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63483B2C87665A00E6C658 /* Weekday.swift */; };
+		5A63483E2C876EB100E6C658 /* DogImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63483D2C876EB100E6C658 /* DogImageView.swift */; };
+		5A6348402C876F0800E6C658 /* DogImageRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63483F2C876F0800E6C658 /* DogImageRepositoryTests.swift */; };
+		5A6348442C87700E00E6C658 /* MockDogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348432C87700E00E6C658 /* MockDogService.swift */; };
+		5A6348472C87739600E6C658 /* MockDogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348462C87739600E6C658 /* MockDogRepository.swift */; };
+		5A6348492C8774C600E6C658 /* MockDogCalendarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6348482C8774C600E6C658 /* MockDogCalendarRepository.swift */; };
+		5A63484B2C87757700E6C658 /* DogCalendarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A63484A2C87757700E6C658 /* DogCalendarData.swift */; };
+		5AC178652C810D3B00DBB761 /* dogcalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC178642C810D3B00DBB761 /* dogcalendarApp.swift */; };
+		5AC178692C810D3C00DBB761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC178682C810D3C00DBB761 /* Assets.xcassets */; };
+		5AC1786C2C810D3C00DBB761 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC1786B2C810D3C00DBB761 /* Preview Assets.xcassets */; };
+		5AC178902C810D9D00DBB761 /* NiceArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5AC1788F2C810D9D00DBB761 /* NiceArchitecture */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AC178722C810D3C00DBB761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AC178592C810D3B00DBB761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AC178602C810D3B00DBB761;
+			remoteInfo = dogcalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A6348052C82777D00E6C658 /* DogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogView.swift; sourceTree = "<group>"; };
+		5A6348072C82780000E6C658 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		5A63480C2C8278CF00E6C658 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
+		5A63480F2C83F43600E6C658 /* DogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRepository.swift; sourceTree = "<group>"; };
+		5A6348122C83F52A00E6C658 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		5A6348152C84077700E6C658 /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
+		5A6348192C84085000E6C658 /* GetDogsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDogsRequest.swift; sourceTree = "<group>"; };
+		5A63481B2C840FF000E6C658 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5A63481D2C84100700E6C658 /* DogViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewState.swift; sourceTree = "<group>"; };
+		5A6348202C8410CA00E6C658 /* InjectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
+		5A6348222C84112200E6C658 /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
+		5A6348262C841C6A00E6C658 /* DogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCoordinator.swift; sourceTree = "<group>"; };
+		5A63482A2C84213400E6C658 /* DogCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCoordinatorView.swift; sourceTree = "<group>"; };
+		5A63482C2C84318C00E6C658 /* DogCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCalendar.swift; sourceTree = "<group>"; };
+		5A63482E2C869A0500E6C658 /* DogCalendarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCalendarRepository.swift; sourceTree = "<group>"; };
+		5A6348302C86D86200E6C658 /* DogCalendarRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCalendarRepositoryTests.swift; sourceTree = "<group>"; };
+		5A6348332C875D7E00E6C658 /* DogImage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DogImage.json; sourceTree = "<group>"; };
+		5A6348372C875E4D00E6C658 /* DogViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModelTests.swift; sourceTree = "<group>"; };
+		5A6348392C8761D700E6C658 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		5A63483B2C87665A00E6C658 /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		5A63483D2C876EB100E6C658 /* DogImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageView.swift; sourceTree = "<group>"; };
+		5A63483F2C876F0800E6C658 /* DogImageRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageRepositoryTests.swift; sourceTree = "<group>"; };
+		5A6348432C87700E00E6C658 /* MockDogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDogService.swift; sourceTree = "<group>"; };
+		5A6348462C87739600E6C658 /* MockDogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDogRepository.swift; sourceTree = "<group>"; };
+		5A6348482C8774C600E6C658 /* MockDogCalendarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDogCalendarRepository.swift; sourceTree = "<group>"; };
+		5A63484A2C87757700E6C658 /* DogCalendarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCalendarData.swift; sourceTree = "<group>"; };
+		5AC178612C810D3B00DBB761 /* dogcalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dogcalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC178642C810D3B00DBB761 /* dogcalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dogcalendarApp.swift; sourceTree = "<group>"; };
+		5AC178682C810D3C00DBB761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AC1786B2C810D3C00DBB761 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AC178712C810D3C00DBB761 /* dogcalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dogcalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AC1785E2C810D3B00DBB761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A63480B2C8278AD00E6C658 /* Netable in Frameworks */,
+				5AC178902C810D9D00DBB761 /* NiceArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC1786E2C810D3C00DBB761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A63480E2C83F41C00E6C658 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5A63480F2C83F43600E6C658 /* DogRepository.swift */,
+				5A63482E2C869A0500E6C658 /* DogCalendarRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5A6348112C83F4D600E6C658 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348172C84081F00E6C658 /* Dog */,
+				5A6348152C84077700E6C658 /* DogService.swift */,
+				5A6348222C84112200E6C658 /* ErrorService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5A6348142C83F54E00E6C658 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348122C83F52A00E6C658 /* DogImage.swift */,
+				5A63481B2C840FF000E6C658 /* Coordinator.swift */,
+				5A63481D2C84100700E6C658 /* DogViewState.swift */,
+				5A63482C2C84318C00E6C658 /* DogCalendar.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A6348172C84081F00E6C658 /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348182C84084200E6C658 /* Requests */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		5A6348182C84084200E6C658 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348192C84085000E6C658 /* GetDogsRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		5A63481F2C8410BD00E6C658 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348202C8410CA00E6C658 /* InjectedValues.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5A6348242C841C3F00E6C658 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348052C82777D00E6C658 /* DogView.swift */,
+				5A63483D2C876EB100E6C658 /* DogImageView.swift */,
+				5A63480C2C8278CF00E6C658 /* DogViewModel.swift */,
+				5A6348072C82780000E6C658 /* EmptyCell.swift */,
+				5A6348252C841C4F00E6C658 /* Coordinator */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5A6348252C841C4F00E6C658 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348262C841C6A00E6C658 /* DogCoordinator.swift */,
+				5A63482A2C84213400E6C658 /* DogCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5A6348322C875D5200E6C658 /* TestResources */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348332C875D7E00E6C658 /* DogImage.json */,
+				5A6348392C8761D700E6C658 /* TestData.swift */,
+				5A63483B2C87665A00E6C658 /* Weekday.swift */,
+				5A63484A2C87757700E6C658 /* DogCalendarData.swift */,
+			);
+			path = TestResources;
+			sourceTree = "<group>";
+		};
+		5A6348352C875E0F00E6C658 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348302C86D86200E6C658 /* DogCalendarRepositoryTests.swift */,
+				5A63483F2C876F0800E6C658 /* DogImageRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5A6348362C875E2900E6C658 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348372C875E4D00E6C658 /* DogViewModelTests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5A6348412C876FE100E6C658 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348452C87738500E6C658 /* Repository */,
+				5A6348422C876FEA00E6C658 /* Service */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		5A6348422C876FEA00E6C658 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348432C87700E00E6C658 /* MockDogService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5A6348452C87738500E6C658 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348462C87739600E6C658 /* MockDogRepository.swift */,
+				5A6348482C8774C600E6C658 /* MockDogCalendarRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5AC178582C810D3B00DBB761 = {
+			isa = PBXGroup;
+			children = (
+				5AC178632C810D3B00DBB761 /* dogcalendar */,
+				5AC178742C810D3C00DBB761 /* dogcalendarTests */,
+				5AC178622C810D3B00DBB761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AC178622C810D3B00DBB761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AC178612C810D3B00DBB761 /* dogcalendar.app */,
+				5AC178712C810D3C00DBB761 /* dogcalendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AC178632C810D3B00DBB761 /* dogcalendar */ = {
+			isa = PBXGroup;
+			children = (
+				5AC178642C810D3B00DBB761 /* dogcalendarApp.swift */,
+				5A6348242C841C3F00E6C658 /* UI */,
+				5A63481F2C8410BD00E6C658 /* Helper */,
+				5A6348142C83F54E00E6C658 /* Models */,
+				5A6348112C83F4D600E6C658 /* Service */,
+				5A63480E2C83F41C00E6C658 /* Repository */,
+				5AC178682C810D3C00DBB761 /* Assets.xcassets */,
+				5AC1786A2C810D3C00DBB761 /* Preview Content */,
+			);
+			path = dogcalendar;
+			sourceTree = "<group>";
+		};
+		5AC1786A2C810D3C00DBB761 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5AC1786B2C810D3C00DBB761 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AC178742C810D3C00DBB761 /* dogcalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A6348412C876FE100E6C658 /* Mock */,
+				5A6348362C875E2900E6C658 /* UI */,
+				5A6348352C875E0F00E6C658 /* Repository */,
+				5A6348322C875D5200E6C658 /* TestResources */,
+			);
+			path = dogcalendarTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AC178602C810D3B00DBB761 /* dogcalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AC178852C810D3C00DBB761 /* Build configuration list for PBXNativeTarget "dogcalendar" */;
+			buildPhases = (
+				5AC1785D2C810D3B00DBB761 /* Sources */,
+				5AC1785E2C810D3B00DBB761 /* Frameworks */,
+				5AC1785F2C810D3B00DBB761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dogcalendar;
+			packageProductDependencies = (
+				5AC1788F2C810D9D00DBB761 /* NiceArchitecture */,
+				5A63480A2C8278AD00E6C658 /* Netable */,
+			);
+			productName = dogcalendar;
+			productReference = 5AC178612C810D3B00DBB761 /* dogcalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AC178702C810D3C00DBB761 /* dogcalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AC178882C810D3C00DBB761 /* Build configuration list for PBXNativeTarget "dogcalendarTests" */;
+			buildPhases = (
+				5AC1786D2C810D3C00DBB761 /* Sources */,
+				5AC1786E2C810D3C00DBB761 /* Frameworks */,
+				5AC1786F2C810D3C00DBB761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AC178732C810D3C00DBB761 /* PBXTargetDependency */,
+			);
+			name = dogcalendarTests;
+			productName = dogcalendarTests;
+			productReference = 5AC178712C810D3C00DBB761 /* dogcalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AC178592C810D3B00DBB761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					5AC178602C810D3B00DBB761 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					5AC178702C810D3C00DBB761 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5AC178602C810D3B00DBB761;
+					};
+				};
+			};
+			buildConfigurationList = 5AC1785C2C810D3B00DBB761 /* Build configuration list for PBXProject "dogcalendar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AC178582C810D3B00DBB761;
+			packageReferences = (
+				5AC1788E2C810D9D00DBB761 /* XCRemoteSwiftPackageReference "NiceArchitecture" */,
+				5A6348092C8278AD00E6C658 /* XCRemoteSwiftPackageReference "netable" */,
+			);
+			productRefGroup = 5AC178622C810D3B00DBB761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AC178602C810D3B00DBB761 /* dogcalendar */,
+				5AC178702C810D3C00DBB761 /* dogcalendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AC1785F2C810D3B00DBB761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC1786C2C810D3C00DBB761 /* Preview Assets.xcassets in Resources */,
+				5AC178692C810D3C00DBB761 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC1786F2C810D3C00DBB761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6348342C875D7E00E6C658 /* DogImage.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AC1785D2C810D3B00DBB761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A63482F2C869A0500E6C658 /* DogCalendarRepository.swift in Sources */,
+				5A63482B2C84213400E6C658 /* DogCoordinatorView.swift in Sources */,
+				5A63480D2C8278CF00E6C658 /* DogViewModel.swift in Sources */,
+				5A63483E2C876EB100E6C658 /* DogImageView.swift in Sources */,
+				5A6348132C83F52A00E6C658 /* DogImage.swift in Sources */,
+				5A63481C2C840FF000E6C658 /* Coordinator.swift in Sources */,
+				5A6348082C82780000E6C658 /* EmptyCell.swift in Sources */,
+				5AC178652C810D3B00DBB761 /* dogcalendarApp.swift in Sources */,
+				5A63481E2C84100700E6C658 /* DogViewState.swift in Sources */,
+				5A63482D2C84318C00E6C658 /* DogCalendar.swift in Sources */,
+				5A6348102C83F43600E6C658 /* DogRepository.swift in Sources */,
+				5A6348162C84077700E6C658 /* DogService.swift in Sources */,
+				5A6348212C8410CA00E6C658 /* InjectedValues.swift in Sources */,
+				5A6348062C82777D00E6C658 /* DogView.swift in Sources */,
+				5A6348272C841C6A00E6C658 /* DogCoordinator.swift in Sources */,
+				5A6348232C84112200E6C658 /* ErrorService.swift in Sources */,
+				5A63481A2C84085000E6C658 /* GetDogsRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC1786D2C810D3C00DBB761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6348492C8774C600E6C658 /* MockDogCalendarRepository.swift in Sources */,
+				5A6348442C87700E00E6C658 /* MockDogService.swift in Sources */,
+				5A6348312C86D86200E6C658 /* DogCalendarRepositoryTests.swift in Sources */,
+				5A63483C2C87665A00E6C658 /* Weekday.swift in Sources */,
+				5A63484B2C87757700E6C658 /* DogCalendarData.swift in Sources */,
+				5A6348402C876F0800E6C658 /* DogImageRepositoryTests.swift in Sources */,
+				5A6348382C875E4D00E6C658 /* DogViewModelTests.swift in Sources */,
+				5A6348472C87739600E6C658 /* MockDogRepository.swift in Sources */,
+				5A63483A2C8761D700E6C658 /* TestData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AC178732C810D3C00DBB761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AC178602C810D3B00DBB761 /* dogcalendar */;
+			targetProxy = 5AC178722C810D3C00DBB761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5AC178832C810D3C00DBB761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AC178842C810D3C00DBB761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AC178862C810D3C00DBB761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"dogcalendar/Preview Content\"";
+				DEVELOPMENT_TEAM = 35XWJ6BAZW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DogCal;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockarts.dogcalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AC178872C810D3C00DBB761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"dogcalendar/Preview Content\"";
+				DEVELOPMENT_TEAM = 35XWJ6BAZW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DogCal;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockarts.dogcalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AC178892C810D3C00DBB761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G63J7HW34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockarts.dogcalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dogcalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dogcalendar";
+			};
+			name = Debug;
+		};
+		5AC1788A2C810D3C00DBB761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G63J7HW34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockarts.dogcalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dogcalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dogcalendar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AC1785C2C810D3B00DBB761 /* Build configuration list for PBXProject "dogcalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC178832C810D3C00DBB761 /* Debug */,
+				5AC178842C810D3C00DBB761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AC178852C810D3C00DBB761 /* Build configuration list for PBXNativeTarget "dogcalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC178862C810D3C00DBB761 /* Debug */,
+				5AC178872C810D3C00DBB761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AC178882C810D3C00DBB761 /* Build configuration list for PBXNativeTarget "dogcalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC178892C810D3C00DBB761 /* Debug */,
+				5AC1788A2C810D3C00DBB761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A6348092C8278AD00E6C658 /* XCRemoteSwiftPackageReference "netable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:steamclock/netable.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.0;
+			};
+		};
+		5AC1788E2C810D9D00DBB761 /* XCRemoteSwiftPackageReference "NiceArchitecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/steamclock/NiceArchitecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A63480A2C8278AD00E6C658 /* Netable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A6348092C8278AD00E6C658 /* XCRemoteSwiftPackageReference "netable" */;
+			productName = Netable;
+		};
+		5AC1788F2C810D9D00DBB761 /* NiceArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AC1788E2C810D9D00DBB761 /* XCRemoteSwiftPackageReference "NiceArchitecture" */;
+			productName = NiceArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5AC178592C810D3B00DBB761 /* Project object */;
+}
